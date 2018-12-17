@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> React js microapps</title>
+    </head>
+    <body>
+        <script src="./dist/app.bundle.js"></script>
+        <!-- <script src = "./dist/angular.bundle.js"></script>
+        <script src = "./dist/react.bundle.js"></script>
+        <angular-app title="Angular component"></angular-app>
+        <react-app></react-app> -->
+     <button onclick="addReactApp()">Add react app</button>
+     <script>
+         function addReactApp() {
+                 window.dispatchEvent(new CustomEvent("reactapp:added",{detail:"details"}));
+         }
+     </script>
+    </body>
+</html>
+
+
